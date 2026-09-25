@@ -1,0 +1,2 @@
+# cat=basic/enable/10; type=boolean; label=Trust AWS CloudFront's edge IPs as reverse proxies: If enabled, AWS's published CloudFront IP ranges are appended to SYS/reverseProxyIP on every request, so TYPO3 trusts their X-Forwarded-* headers when resolving the real client IP. Leave disabled if you don't want TYPO3 fetching/caching that IP list, or if you already maintain reverseProxyIP yourself.
+trustEdgeServerIps = 1

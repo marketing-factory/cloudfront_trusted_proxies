@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Mfd\CloudfrontTrustedProxies\:
+    resource: '../Classes/*'
+
+  cache.cloudfront_trusted_proxies:
+    class: TYPO3\CMS\Core\Cache\Frontend\PhpFrontend
+    factory: ['@TYPO3\CMS\Core\Cache\CacheManager', 'getCache']
+    arguments: ['cloudfront_trusted_proxies']
+
+  Mfd\CloudfrontTrustedProxies\Cache\CloudFrontIpListCache:
+    arguments:
+      $cache: '@cache.cloudfront_trusted_proxies'

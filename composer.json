@@ -1,0 +1,34 @@
+{
+    "name": "mfd/cloudfront-trusted-proxies",
+    "description": "Trust AWS CloudFront's published edge IP ranges as reverse proxies",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^8.3",
+        "typo3/cms-core": "^13.0"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^9.3",
+        "phpunit/phpunit": "^11.0",
+        "guzzlehttp/psr7": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mfd\\CloudfrontTrustedProxies\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mfd\\CloudfrontTrustedProxies\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "cloudfront_trusted_proxies"
+        }
+    },
+    "scripts": {
+        "test:unit": "phpunit -c Build/UnitTests.xml",
+        "test:unit:docker": "Build/Scripts/runTests.sh -s unit"
+    }
+}
