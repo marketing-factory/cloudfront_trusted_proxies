@@ -6,6 +6,12 @@
 >
   <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
              typo3-core-preferred="stable"
+             project-contact="mailto:ingo.schmitt@marketing-factory.de"
+             project-home="https://github.com/marketing-factory/cloudfront-trusted-proxies/"
+             project-repository="https://github.com/marketing-factory/cloudfront-trusted-proxies/"
+             project-issues="https://github.com/marketing-factory/cloudfront-trusted-proxies/issues"
+             edit-on-github-branch="main"
+             edit-on-github="marketing-factory/cloudfront-trusted-proxies"
              interlink-shortcode="mfd/cloudfront-trusted-proxies"
   />
   <project title="CloudFront trusted proxies"
