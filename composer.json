@@ -4,7 +4,7 @@
     "description": "Trust AWS CloudFront's published edge IP ranges as reverse proxies",
     "type": "typo3-cms-extension",
     "license": "GPL-2.0-or-later",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "keywords": [
         "TYPO3 CMS",
         "Extension",
